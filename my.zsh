@@ -1,3 +1,5 @@
+export ZSH="$HOME/.oh-my-zsh"
+
 # Theme
 ZSH_THEME="spaceship"
 SPACESHIP_USER_SHOW=always
@@ -21,6 +23,9 @@ zsh-autocomplete
 zsh-autosuggestions
 zsh-syntax-highlighting
 )
+
+# Oh my zsh
+source $ZSH/oh-my-zsh.sh
 
 # Autocomplete setup for humans
 bindkey -M menuselect  '^[[D' .backward-char  '^[OD' .backward-char
