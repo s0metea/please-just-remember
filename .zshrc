@@ -31,6 +31,7 @@ source $ZSH/oh-my-zsh.sh
 bindkey -M menuselect  '^[[D' .backward-char  '^[OD' .backward-char
 bindkey -M menuselect  '^[[C'  .forward-char  '^[OC'  .forward-char
 bindkey -M menuselect '^M' .accept-line
+zstyle ':completion:*' completer _complete _complete:-fuzzy _correct _approximate _ignored
 
 # ITerm Shell integration
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
